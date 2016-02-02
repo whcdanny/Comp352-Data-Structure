@@ -1,0 +1,172 @@
+public interface PositionADT<E> {
+	//return the element stored at this position
+	public int element();
+
+}
+
+public interface NodeListADT<E> {
+	//returns the position of the first element;
+	public PositionADT<E> first();
+	
+	//returns the position of the last element;
+	public PositionADT<E> last();
+	
+	//returns the position preceding position p in the list;
+	public PositionADT<E> prve(PositionADT<E> p);
+	
+	//returns the position following position p in the list;
+	public PositionADT<E> next(PositionADT<E> p);
+	
+	//replaces the element at position p with e and return the old element a position p;
+	public E set(PositionADT<E> p, E e);
+	
+	//inserts a new element e as the first element and return the position object;
+	public void addFirst(E e);
+	
+	//inserts a new element e as the last element and returns the position object;
+	public void addLast(E e);
+	
+	//inserts a new element e after position p and return the position object;
+	public void addBefore(PositionADT<E> p, E e);
+	
+	//inserts a new element e after position p and returns the position object;
+	public void addAfter(PositionADT<E> p, E e);
+	
+	//removes and return the element at position p. this also invalidates that position p in the list;
+	public PositionADT<E> delete(PositionADT<E> p);
+	
+	//swaps the elements pointed by p1 and p2;
+	public PositionADT<E> swap(PositionADT<E> p1, PositionADT<E> p2);
+	
+	////truncates the underlying array size to the exact number of current positions in the node list;
+	public void truncate();
+	
+	//accept a single character as a parameter;
+	public void setExpansionRule(char expansionRule);
+	
+
+}
+
+
+
+
+
+Algorithm first():
+	if isEmpty() Indicate an error: this list is empty
+	return header
+iii)1.O(1)
+    2.O(1)	
+
+
+
+Algorithm last():
+	if isEmpty() Indicate an error: this list is empty
+	return trailer
+iii)1.O(1)
+    2.O(1)
+
+
+Algorithm prev(p):
+	if p is header Indicate an error: p is first position
+	return setPrev(p)
+iii)1.O(1)
+    2.O(1)
+
+
+
+Algorithm next(p):
+	if p is trailer Indicate an error: p is last position
+	return setNext(p)
+iii)1.O(1)
+    2.O(1)
+
+
+
+Algorithm set(p,e):
+	return p
+	p.setElement(e)
+iii)1.O(1)
+    2.O(1)
+
+	
+
+Algorithm addFirst(e):
+	create a new code n
+	n.setElement(e)
+	header.getNext().setPrev(n)
+	n.setNext(header.getNext())
+	header.setNext(n)
+	numberElement++
+	return n
+iii)1.O(1)
+    2.O(n)
+
+
+Algorithm addLast(e):
+	create a new node n
+	n.setElement(e)
+	trailer.getPrev().setNext(n)
+	n.setPrev(trailer.getPrev())
+	trailer.setPrev(n)
+	numberElement++
+	return n
+iii)1.O(1)
+    2.O(1)
+
+
+Algorithm addBefore(p,e):
+	create a new node n
+	n.setElement(e)
+	n.setPre(p.getPrev())
+	n.setNext(p)
+	(p.getPrev()).setNext(n)
+	p.setPrev(n)
+	numberElement++
+	return n
+iii)1.O(1)
+    2.O(n)
+
+
+Algorithm addAfter(p,e):
+	create a new node n
+	n.setElement(e)
+	n.setNext(p.getNext())
+	n.setPre(p)
+	(p.getNext()).setProv(n)
+	p.setNext(n)
+	numberElement++
+	return n
+iii)1.O(1)
+    2.O(n)
+
+
+Algorithm delete(p):
+	if p is in the list and isEmpty()
+	return p
+iii)1.O(1)
+    2.O(n)
+
+
+Algorithm swap(p1, p2):
+	e1=p1.element()
+	e2=p2.element()
+	p1.element(e2)
+	p2.element(e1)
+iii)1.O(1)
+    2.O(1)
+
+
+Algorithm truncate():
+	newList[]<- new List[size()]
+	for i<-0; i<- l.length(); i++
+		newList[i]<-l[i]
+	l <- newList
+iii)1.O(1)
+    2.O(n)
+
+
+Algorithm setExpansionRule(expansionRule):
+	rule<-expansionRule
+iii)1.O(1)
+    2.O(1)
+	
