@@ -1,0 +1,9 @@
+Algorithm linearTetranacci(k,d,c,b,a):
+	Input:Nonnegative integer k
+	Output:The k-th Tetranacci number Tk
+	if k<3 then
+	return 0
+	else if k=3
+	return a
+	else
+	return linearTetranacci((k-1),c,b,a,a+b+c+d)

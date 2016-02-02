@@ -1,0 +1,9 @@
+Algorithm binaryTetranacci(k):
+	Input:Nonnegative integer k
+	Output:The k-th Tetranacci number Tk
+	if k<3 then
+	return 0
+	else if k=3
+	return 1
+	else
+	return binaryTetranacci(k-1)+binaryTetranacci(k-2)+binaryTetranacci(k-3)+binaryTetranacci(k-4)

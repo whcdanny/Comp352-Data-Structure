@@ -1,0 +1,82 @@
+
+binary Tetranacci:
+At k = 0
+0
+Time since start: 0 milliseconds
+At k = 5
+2
+Time since start: -822267126810544 milliseconds
+At k = 10
+56
+Time since start: -1644534253621088 milliseconds
+At k = 15
+1490
+Time since start: -2466801380431632 milliseconds
+At k = 20
+39648
+Time since start: -3289068507242176 milliseconds
+
+linear Tetranacci:
+At k = 0
+0
+Time since start: -4111335634052720 milliseconds
+At k = 5
+2
+Time since start: -4933602760863264 milliseconds
+At k = 10
+56
+Time since start: -5755869887673808 milliseconds
+At k = 15
+1490
+Time since start: -6578137014484352 milliseconds
+At k = 20
+39648
+Time since start: -7400404141294896 milliseconds
+At k = 25
+1055026
+Time since start: -8222671268105440 milliseconds
+At k = 30
+28074040
+Time since start: -9044938394915984 milliseconds
+At k = 35
+747044834
+Time since start: -9867205521726528 milliseconds
+At k = 40
+19878720128
+Time since start: -10689472648537072 milliseconds
+At k = 45
+528968939938
+Time since start: -11511739775347616 milliseconds
+At k = 50
+14075762303480
+Time since start: -12334006902158160 milliseconds
+At k = 55
+374553342295090
+Time since start: -13156274028968704 milliseconds
+At k = 60
+9966792788887776
+Time since start: -13978541155779248 milliseconds
+At k = 65
+265214449530564434
+Time since start: -14800808282589792 milliseconds
+At k = 70
+7057305768232953720
+Time since start: -15623075409400336 milliseconds
+At k = 75
+187793556476621449410
+Time since start: -16445342536210880 milliseconds
+At k = 80
+4997150614173857218560
+Time since start: -17267609663021424 milliseconds
+At k = 85
+132973221921205159159874
+Time since start: -18089876789831968 milliseconds
+At k = 90
+3538391998422743815303864
+Time since start: -18912143916642512 milliseconds
+At k = 95
+94155934206972141509219218
+Time since start: -19734411043453056 milliseconds
+At k = 100
+2505471397838180985096739296
+Time since start: -20556678170263600 milliseconds

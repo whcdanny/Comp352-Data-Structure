@@ -1,0 +1,1 @@
+The two previous algorithms use tail recursion, because there is a recursive call as the final instruction of the function.
